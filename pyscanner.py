@@ -5,7 +5,7 @@ import requests
 import re
 
 base_uri = 'www.skyscanner.net'
-request_headers = {'User-Agent': 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)'}
+request_headers = {'User-Agent': 'PyScanner (https://github.com/richardasaurus/pyscanner)'}
 
 
 class PyScanner:
