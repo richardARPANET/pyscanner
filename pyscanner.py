@@ -149,7 +149,7 @@ class PyScanner:
             # remove unwanted keys
             self.__dict_remove(['Id', 'AgentId', 'Age', 'IsReturn', 'QuoteRequestId', 'RequestDateTime'], q)
             # only add to results if link is present
-            if q['Link'] is not None:
+            if 'Link' in q and q['Link'] is not None:
                 results.append(q)
 
         #sort results by price, cheapest first
